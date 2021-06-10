@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} Novo post {% endblock title%} {%
+block content %}
+<form class="form-container" action="/api/posts" method="POST">
+  <label for="titulo">Título</label>
+  <input name="titulo" type="text" id="titulo" />
+  <label for="data">Data</label>
+  <input name="data" type="date" id="data" />
+  <label for="conteudo">Conteúdo</label>
+  <textarea name="conteudo" id="conteudo" rows="4" cols="50"></textarea>
+  <label for="autor">Autor</label>
+  <input name="autor" type="text" id="autor" />
+  <label for="email">E-mail</label>
+  <input name="email" type="email" id="email" />
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+{% endblock content %}

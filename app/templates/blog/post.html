@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}{{post.title}}{% endblock title%} {%
+block content %}
+<div class="post-container">
+  <h1>{{post.titulo}}</h1>
+
+  <div class="post-data-autor">
+    <span>{{post.autor}} | {{post.data}}</span>
+  </div>
+
+  <p class="post-conteudo">{{post.conteudo}}</p>
+
+  <div class="post-voltar-inicio">
+    <a href="#">Voltar para início</a>
+  </div>
+</div>
+
+{% endblock content %}
